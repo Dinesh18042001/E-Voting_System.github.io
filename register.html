@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <title>Online voting system-registration</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <section class="headerR-3"><br>
+        <div class="nav-links">
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="login.html">LOGIN</a></li>
+                <li><a href="Leaders.html">LEADERS</a></li>
+                <li><a href="parties.html">PARTIES</a></li>
+                <li><a href="">CONTACT</a></li>
+            </ul>
+        </div>
+        <h1> Online Voting system</h1>
+        <br>
+        <hr>
+        <br>
+        <h2>Registration</h2><br>
+        <form action="./api/register.php" method="POST" enctype="multipart/form-data">
+            <input class="RG" type="number" name="aadhar" placeholder="Enter aadhar"><br><br>
+            <input class="RG1" type="text" name="name" placeholder="Enter name">
+            <input class="RG1" type="number" name="mobile" placeholder="Enter mobile"><br><br>
+            <input class="RG2" type="password" name="password" placeholder="Password">
+            <input class="RG2" type="password" name="cpassword" placeholder="Confirm password"><br><br>
+            <input class="RG3" type="text" name="address" placeholder="Address"><br><br>
+
+            <center>
+                <div id="imagepart">
+                    Upload image:<input type="file" name="photo">
+                </div><br><br>
+
+                <div id="role">
+                    Select your role:  <select Name="role"><br><br>
+
+                        <option value="1">Voter</option>
+                        <option value="1">Group</option>
+                    </select>
+                </div>
+
+            </center>
+            <br><br>
+            <button class="hero-btn2" name="register">Register</button><br><br>
+            Already user? <a href="./login.html">Login here</a>
+        </form>
+
+
+    </section>
+</body>
+
+</html>
